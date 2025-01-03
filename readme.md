@@ -40,7 +40,7 @@ npm run dev
 
 To start the API server in production mode, run:
 ```sh
-npm start
+npm run build && npm run start
 ```
 
 The API will be available at `http://localhost:3000`.
