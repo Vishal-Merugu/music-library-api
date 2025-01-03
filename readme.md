@@ -43,7 +43,7 @@ To start the API server in production mode, run:
 npm run build && npm run start
 ```
 
-The API will be available at `http://localhost:3000`.
+The API will be available at `http://localhost:8000`.
 
 ### Environment Variables
 
