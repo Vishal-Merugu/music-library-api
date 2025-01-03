@@ -6,7 +6,7 @@ const startServer = async () => {
     const app = await createApp();
 
     app.listen(env.PORT, () => {
-      console.log(`🚀 Server running on http://localhost:${env.PORT}`);
+      console.log(`🚀 Server running on PORT ${env.PORT}`);
     });
   } catch (error) {
     console.error("Failed to start server:", error);

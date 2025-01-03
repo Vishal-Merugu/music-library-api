@@ -12,6 +12,7 @@ import artistRoutes from "./modules/artists/routes";
 import albumRoutes from "./modules/albums/routes";
 import trackRoutes from "./modules/tracks/routes";
 import favoriteRoutes from "./modules/favorites/routes";
+import { logRequest } from "./modules/auth/utils";
 
 const createApp = async (): Promise<Application> => {
   // Validate environment variables
@@ -26,6 +27,8 @@ const createApp = async (): Promise<Application> => {
   // Middleware
   app.use(cors());
   app.use(express.json());
+
+  app.use(logRequest);
 
   app.use(authRoutes);
 
