@@ -64,7 +64,7 @@ const Controllers: IControllers = {
       );
 
       const token = jwt.sign({ id: newUser._id }, ENV.JWT_SECRET, {
-        expiresIn: "1h",
+        expiresIn: "10h",
       });
 
       await redisUtils.set(
